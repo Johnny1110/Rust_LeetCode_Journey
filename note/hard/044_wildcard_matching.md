@@ -115,3 +115,9 @@ How to Implement:
 * Track starIndex (last seen '*') and matchIndex (where matching started).
 * If `p[j] == '*'`, store starIndex and move j forward.
 * If mismatch occurs and we saw a '*', backtrack and retry from `matchIndex + 1`.
+
+<br>
+
+Solved:
+
+[rs_file](../../leetcode/src/hard/wildcard_matching.rs)
