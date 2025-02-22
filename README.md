@@ -34,13 +34,26 @@ Weekly leetcode training with Rust, start from 2025/02/20.
 
 <br>
 
+---
+
+<br>
+
 ## About Test:
 
 Rust cargo unit test example:
 
+<br>
 
-Unit Test:
+wildcard_matching.rs:
+
 ```rust
+
+impl Solution {
+    pub fn is_match(s: String, p: String) -> bool {
+        ...
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -64,7 +77,7 @@ mod tests {
 
 <br>
 
-CMD:
+cargo cli:
 ```
 cargo test hard::wildcard_matching
 ```
