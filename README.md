@@ -32,3 +32,39 @@ Weekly leetcode training with Rust, start from 2025/02/20.
 
 ## Bonus
 
+<br>
+
+## About Test:
+
+Rust cargo unit test example:
+
+
+Unit Test:
+```rust
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_basic() {
+        let s = "abc".to_string();
+        let p = "a?c".to_string();
+        // Replace false with the correct expected output when implemented.
+        assert_eq!(Solution::is_match(s, p), true);
+    }
+
+    #[test]
+    fn test_edge_case() {
+        let s = "".to_string();
+        let p = "".to_string();
+        assert_eq!(Solution::is_match(s, p), true);
+    }
+}
+```
+
+<br>
+
+CMD:
+```
+cargo test hard::wildcard_matching
+```
