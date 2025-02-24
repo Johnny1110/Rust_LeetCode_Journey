@@ -118,9 +118,9 @@ How to Implement:
 
 <br>
 
-Solved:
+## Solved:
 
-version-1:
+### version-1: DP
 
 ```rust
 impl Solution {
@@ -183,7 +183,41 @@ impl Solution {
 
 <br>
 
-version-1: revamp by greedy
+### version-2: Revamp by Greedy
+
+<br>
+
+1. Understand the role of '*':
+
+    * Key Insight:
+
+        The wildcard '*' can match any sequence include empty. instead of expolring all possibilities like DP, greedy tries to match as many chars as possible and the do "backtracks" if a later mismatch fource you to reconsider how many chars '*' should absorb.
+
+    * Question to Ponder:
+
+          How can you quickly decide how any chars to let '*' match without try every possibility like DP.
+
+<br>
+
+2. Use 2 Pointer
+
+    * Concept:
+
+        Using 2 pointers one is for input String `s` and another is for input pattern `p`. move these 2 pointer forward when char matched or when you encounter pattern `?`.
+
+    * Design Question:
+
+        What should I do when current char not match and pattern is not wildcard ?
+
+<br>
+
+3. Record the postition of the `'*'`
+
+    * Stratgey:
+
+        When you see the star in pattern, store the pattetn position of '*' and also input s. 
+
+
 
 ```rust
 
