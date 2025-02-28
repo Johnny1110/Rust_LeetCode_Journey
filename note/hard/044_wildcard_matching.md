@@ -187,11 +187,11 @@ impl Solution {
 
 <br>
 
-1. Understand the role of '*':
+1. Understand the role of `*`:
 
     * Key Insight:
 
-        The wildcard '*' can match any sequence include empty. instead of expolring all possibilities like DP, greedy tries to match as many chars as possible and the do "backtracks" if a later mismatch fource you to reconsider how many chars '*' should absorb.
+        The wildcard `*` can match any sequence include empty. instead of expolring all possibilities like DP, greedy tries to match as many chars as possible and the do "backtracks" if a later mismatch fource you to reconsider how many chars '*' should absorb.
 
     * Question to Ponder:
 
@@ -242,6 +242,24 @@ impl Solution {
 
 How do you update your pointers so that you "try again" with `*` can matching a longer sequence.
 
+<br>
+
+<br>
+
+## Overall Flow:
+
+1. Initialize Pointers: Start with both pointers at the beginning of s and p, and initialize variables to record the last '*' encountered and the match position.
+
+2. Iterate Over the String:
+    * If characters match (or you have a '?'), move both pointers forward.
+    * When encountering '*', record the positions and advance the pattern pointer.
+
+3. Backtrack if Needed:
+
+    * On a mismatch, if a previous '*' was recorded, adjust the pointers to "extend" the match for the '*'.
+
+4. Handle Trailing Characters in Pattern:
+    * Ensure any remaining characters in the pattern are '*' so they can match an empty sequence.
 
 
 ```rust
