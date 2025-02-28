@@ -251,15 +251,15 @@ How do you update your pointers so that you "try again" with `*` can matching a 
 1. Initialize Pointers: Start with both pointers at the beginning of s and p, and initialize variables to record the last '*' encountered and the match position.
 
 2. Iterate Over the String:
-    * If characters match (or you have a '?'), move both pointers forward.
-    * When encountering '*', record the positions and advance the pattern pointer.
+    * If characters match (or you have a `?`), move both pointers forward.
+    * When encountering `*`, record the positions and advance the pattern pointer.
 
 3. Backtrack if Needed:
 
-    * On a mismatch, if a previous '*' was recorded, adjust the pointers to "extend" the match for the '*'.
+    * On a mismatch, if a previous `*` was recorded, adjust the pointers to "extend" the match for the `*`.
 
 4. Handle Trailing Characters in Pattern:
-    * Ensure any remaining characters in the pattern are '*' so they can match an empty sequence.
+    * Ensure any remaining characters in the pattern are `*` so they can match an empty sequence.
 
 
 ```rust
