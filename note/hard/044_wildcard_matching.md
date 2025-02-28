@@ -215,7 +215,32 @@ impl Solution {
 
     * Stratgey:
 
-        When you see the star in pattern, store the pattetn position of '*' and also input s. 
+        When you see the star in pattern, store the pattetn position of `*` and also input s position where this `*` was encountered.
+        This "bookmark" will allow you to backtrack later if needed.
+
+    * Thinking point:
+
+        How can you use this stored position to "extend" the match `*` if you hit the dead end later ?
+
+4. Handling mismatches with backtracking.
+
+    * Process: 
+
+        If you encounter a mismatch (where the current char not match the pattern or is not `*`  and `?`), check if you have previous `*`
+
+        __YES__: Instead if giving up, use the record `*` position: 
+
+        * Assume that `*` should match one more char from the string.
+
+        * Reset the pattern pointer to to just after the `*`, and move the string pointer forward.
+
+        __NO__: you can just conclude the pattern does not match the string.
+
+<br>
+
+### Reflective question
+
+How do you update your pointers so that you "try again" with `*` can matching a longer sequence.
 
 
 
