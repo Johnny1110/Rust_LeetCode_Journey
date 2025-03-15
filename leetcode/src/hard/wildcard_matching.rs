@@ -2,34 +2,52 @@ use crate::common::Solution;
 
 impl Solution {
     pub fn is_match(s: String, p: String) -> bool {
-        // 1. Initialize Pointers: Start with both pointers at the beginning of s and p, 
-        // and initialize variables to record the last '*' encountered and the match position.
-        let mut s_ptr = 0;
-        let mut p_ptr = 0;
-        let mut match_ptr = 0;
-        let mut star_ptr = -1;
+        // Convert Strings to vectors of chars for efficient access.
+        let s_chars: Vec<char> = s.chars().collect();
+        let p_chars: Vec<char> = p.chars().collect();
 
-        // 2. iterate through the string s
-        while s_ptr < s.len() {
-            let the_char = s..chars().nth(s_ptr).upwrap();
-            let the_pattern = p.chars().nth(p_str).upwrap();
-            // If characters match (or you have a '?'), move both pointers forward.
-            // When encountering '*', record the positions and advance the pattern pointer.
-            if the_char == the_pattern || the_pattern == '?' {
-                s_ptr += 1;
+        // define 2 pointer for s and p
+        let (mut p_ptr, mut s_ptr) = (0, 0);
+
+        // star_ptr will store the index in p where '*' was last seen.
+        // match_ptr stores the position in s corresponding to the last match after '*'.
+        let (mut start_ptr, mut match_ptr) = (None, 0);
+
+        // Loop through the string s.
+        while s_ptr < s_chars.len() {
+            let p_is_not_over = p_ptr < p_chars.len();
+
+            // Direct match or '?' wildcard.
+            if p_is_not_over && (p_chars[p_ptr] == '?' || p_chars[p_ptr] == s_chars[s_ptr]) {
                 p_ptr += 1;
-            } else if the_pattern == '*' {
-                star_ptr = p_ptr;
+                s_ptr += 1;
+            }
+            // Record position of '*' in pattern and current position in s
+            else if p_is_not_over && p_chars[p_ptr] == '*' {
+                start_ptr = Some(p_ptr);
                 match_ptr = s_ptr;
-                s_ptr += 1;
                 p_ptr += 1;
-            } else if star_ptr != -1 {
-                // TODO
+                // why we not increment s_ptr here? because we want to match '*' with 0 or more characters.
+            }
+            // Mismatch occurred, but there was a previous '*'
+            // Reset p_ptr to one past the '*' and advance match_ptr.
+            else if let Some(star) = start_ptr {
+                p_ptr = star + 1;
+                match_ptr += 1;
+                s_ptr = match_ptr;
+            } 
+            // No '*' to fallback to and characters do not match.
+            else {
+                return false;
             }
         }
-        
 
-        return false;
+        // Check for remaining characters in pattern.
+        while p_ptr < p_chars.len() && p_chars[p_ptr] == '*' {
+            p_ptr += 1;
+        }
+
+        p_ptr == p_chars.len()
     }
 }
 
