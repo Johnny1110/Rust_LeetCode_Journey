@@ -25,7 +25,9 @@ Weekly leetcode training with Rust, start from 2025/02/20.
 
 ### Hard
 
-* 044 - Wildcard Matching 👈 (2025/02/20) [problem link](https://leetcode.com/problems/wildcard-matching/description/) [solution](note/hard/044_wildcard_matching.md)
+* 044 - Wildcard Matching (2025/02/20) [problem link](https://leetcode.com/problems/wildcard-matching/description/) [solution](note/hard/044_wildcard_matching.md)
+
+* 045 - Jump Game II 👈 (2025/03/15) [problem link](https://leetcode.com/problems/jump-game-ii/) [solution](note/hard/044_jump_game_2.md)
 
 <br>
 <br>
