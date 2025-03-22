@@ -92,7 +92,7 @@ impl Solution {
         // iterate the nums array
         nums.iter()
             .enumerate()
-            .for_each(|(position, &steps)| {
+            .for_each(|(position, steps)| {
                 for i in position+1..position+(steps+1) as usize {
                     if i >= nums.len() {
                         break;
