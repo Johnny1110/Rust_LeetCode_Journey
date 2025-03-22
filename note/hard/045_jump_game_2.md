@@ -121,3 +121,44 @@ impl Solution {
 
 
 ### Greedy Approach
+
+Now, let's think about using the Greedy Approach to solve this problem.
+
+When we iterate over the nums array, we can see how many step we can move, and we are also 
+looking for the next slot that will allow us to move further.
+
+<br>
+
+For example, consider `nums: [2, 3, 1, 1, 4]`
+
+When we iterate over the first element `2`, we know we can move the `nums[1]` and `nums[2]`
+
+* `nums[1]` is 3
+* `nums[2]` is 1
+
+Obviously we want to move to `nums[1]`, because it provider more step to move forward.
+
+```rust
+abs_step -> i + step
+
+nums[1] -> abs_step = 1 + 3 = 4
+nums[2] -> abs_step = 2 + 1 = 3
+
+Since 4 > 3, we choose nums[1] as the next step.
+```
+
+<br>
+
+We iterate through the array and choose the index with largest `abs_step` as our next step.
+continuing until we reach out the the of nums array.
+
+Let's drill down into this approach further.
+
+<br>
+
+```rust
+impl Solution {
+    pub fn jump(nums: Vec<i32>) -> i32 {
+        // TODO: ...
+}
+```
