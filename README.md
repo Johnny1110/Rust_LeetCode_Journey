@@ -25,7 +25,9 @@ Weekly leetcode training with Rust, start from 2025/02/20.
 
 * 046 - Permutations (2025/03/29) [problem link](https://leetcode.com/problems/permutations/description/) [solution](note/medium/046_permutations.md)
 
-* 047 - Permutations II 👈 (2025/04/03) [problem link](https://leetcode.com/problems/permutations-ii/description/) [solution](note/medium/047_permutations_II.md)
+* 047 - Permutations II (2025/04/03) [problem link](https://leetcode.com/problems/permutations-ii/description/) [solution](note/medium/047_permutations_II.md)
+
+* 048 -  Rotate Image (2025/04/03) 👈 [problem link](https://leetcode.com/problems/rotate-image/description/) [solution](note/medium/048_rotate_image.md)
 
 <br>
 
