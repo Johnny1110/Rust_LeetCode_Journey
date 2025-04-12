@@ -28,11 +28,13 @@ As the topic stated, we can utlize hash table and sorting.
 
 I immediately thought of iterating through the string array, sorting the letters in each word in order, then put the word into hash table -- using the sorted letters as key, and orignal word as value. 
 
-Finally we can output all of the hash table's value as 2 2D array.
+Finally we can output all of the hash table's value as 2D array.
 
 It's could be a good apporach to solve this problem maybe. But what if we don't have to sort the letter in every words?
 
 I'm asking chatGPT for a better approach, and here is what I got:
+
+<br>
 
 ### Alternative: Frequency Count Approach
 
