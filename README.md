@@ -27,9 +27,11 @@ Weekly leetcode training with Rust, start from 2025/02/20.
 
 * 047 - Permutations II (2025/04/03) [problem link](https://leetcode.com/problems/permutations-ii/description/) [solution](note/medium/047_permutations_II.md)
 
-* 048 -  Rotate Image (2025/04/03) [problem link](https://leetcode.com/problems/rotate-image/description/) [solution](note/medium/048_rotate_image.md)
+* 048 - Rotate Image (2025/04/03) [problem link](https://leetcode.com/problems/rotate-image/description/) [solution](note/medium/048_rotate_image.md)
 
-* 049 -  Group Anagrams (2025/04/12) 👈 [problem link](https://leetcode.com/problems/group-anagrams/description/) [solution](note/medium/049_group_anagrams.md)
+* 049 - Group Anagrams (2025/04/12) [problem link](https://leetcode.com/problems/group-anagrams/description/) [solution](note/medium/049_group_anagrams.md)
+
+* 050 - Pow(x, n) (2025/04/19) 👈 [problem link](https://leetcode.com/problems/powx-n/description/) [solution](note/medium/050_pow_x_n.md)
 
 <br>
 
