@@ -53,10 +53,10 @@ Exponentiation by squaring trick that runs in `O(log n)` instead of `O(n)`. The 
     ```
     result = 1
     while n > 0:
-    if n & 1 == 1:
-        result *= x
-    x *= x
-    n >>= 1
+        if n & 1 == 1:
+            result *= x
+        x *= x
+        n >>= 1
     return result
     ```
 
