@@ -62,8 +62,29 @@ I want to try __Frequency Count Approach__ directly.
 
 ```rust
 impl Solution {
+
+    // Using Frequency Count Approach.
     pub fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
-        // TODO
+        // 1. create a HashMap to store the frequency of each character in the strings.
+        // map from "letter frequency array" -> list of strings
+        let mut frequency_map: HashMap<[u8; 26], Vec<String>> = HashMap::new();
+
+        // 2. iterate through each string in the input vector.
+        for s in strs {
+            let mut frequency = [0 as u8; 26];
+
+            for byte in s.bytes() {
+                frequency[(byte - b'a') as usize] += 1; 
+            }
+
+            frequency_map.entry(frequency)
+            .or_insert(vec![])
+            .push(s);
+        }
+
+        return frequency_map.into_iter()
+            .map(|(_, v)| v)
+            .collect();
     }
 }
 ```
