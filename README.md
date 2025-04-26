@@ -31,13 +31,15 @@ Weekly leetcode training with Rust, start from 2025/02/20.
 
 * 049 - Group Anagrams (2025/04/12) [problem link](https://leetcode.com/problems/group-anagrams/description/) [solution](note/medium/049_group_anagrams.md)
 
-* 050 - Pow(x, n) (2025/04/19) 👈 [problem link](https://leetcode.com/problems/powx-n/description/) [solution](note/medium/050_pow_x_n.md)
+* 050 - Pow(x, n) (2025/04/19)  [problem link](https://leetcode.com/problems/powx-n/description/) [solution](note/medium/050_pow_x_n.md)
 
 <br>
 
 ### Hard
 
 * 044 - Wildcard Matching (2025/02/20) [problem link](https://leetcode.com/problems/wildcard-matching/description/) [solution](note/hard/044_wildcard_matching.md)
+
+* 051 - N-Queens (2025/04/26) 👈 [problem link](https://leetcode.com/problems/n-queens/description/) [solution](note/hard/051_n_queens.md)
 
 <br>
 <br>
