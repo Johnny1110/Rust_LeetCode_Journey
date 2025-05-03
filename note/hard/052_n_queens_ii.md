@@ -22,7 +22,7 @@ Are there any fast approach to find out how many distinct solutions to the n-que
 
 <br>
 
-## Let's Code
+## Let's Coding
 
 
 ```rust
