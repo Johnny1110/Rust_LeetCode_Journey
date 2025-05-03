@@ -141,6 +141,18 @@ let mut diag1_used = vec![false; 2*n - 1];
 // index = (r - c) + (n - 1)
 ```
 
+For examle, if `n=4`:
+
+* The max `row-col` is `3-0` equals to 3.
+* The min `row-col` is `0-3` equals to -3.
+
+So all the possiable `row-col` nums is `[-3, -2, -1, 0, 1, 2, 3]` the length is 7.
+
+How do we map `row-col` to index? 
+
+If `row-col` is negative then abs it and plus `n-1`. Like `row-col = -3` then `abs(-3) + 3` and we got index 6.
+
+
 <br>
 
 3. “/”‑diagonals (bottom‑left → top‑right)
@@ -151,6 +163,13 @@ Cells share a “/” diagonal when (r + c) is equal; that sum goes from 0 to 2*
 let mut diag2_used = vec![false; 2*n - 1];
 // index = r + c
 ```
+
+For examle, if `n=4`:
+
+* The max `row+col` is `0+0` equals to 0.
+* The min `row+col` is `3+3` equals to 6.
+
+So all the possiable `row-col` nums is `[0, 1, 2, 3, 4, 5, 6]` the length is 7.
 
 <br>
 
