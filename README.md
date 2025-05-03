@@ -39,7 +39,9 @@ Weekly leetcode training with Rust, start from 2025/02/20.
 
 * 044 - Wildcard Matching (2025/02/20) [problem link](https://leetcode.com/problems/wildcard-matching/description/) [solution](note/hard/044_wildcard_matching.md)
 
-* 051 - N-Queens (2025/04/26) 👈 [problem link](https://leetcode.com/problems/n-queens/description/) [solution](note/hard/051_n_queens.md)
+* 051 - N-Queens (2025/04/26) [problem link](https://leetcode.com/problems/n-queens/description/) [solution](note/hard/051_n_queens.md)
+
+* 052 - N-Queens II (2025/05/03) 👈 [problem link](https://leetcode.com/problems/n-queens-ii/description/) [solution](note/hard/052_n_queens_ii.md)
 
 <br>
 <br>

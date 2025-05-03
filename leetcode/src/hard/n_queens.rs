@@ -30,11 +30,6 @@ impl Solution {
                 Self::place(results, chess_board, row + 1);
                 // backtrack and remove the queen
                 chess_board.remove_queen(row, col);
-            } else {
-                if col == n - 1 {
-                    return;
-                }
-                    
             }
         }
     }
