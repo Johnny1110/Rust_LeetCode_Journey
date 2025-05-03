@@ -302,6 +302,56 @@ impl ChessBoard {
         result
     }
 }
+
+// define the SafeMark struct
+#[derive(Debug)]
+pub struct SafetyMark {
+    pub columns: Vec<bool>,
+    pub diagonals_top_left_2_bot_right: Vec<bool>,
+    pub diagonals_top_right_2_bot_left : Vec<bool>,
+}
+
+impl SafetyMark {
+
+    pub fn new(n: usize) -> Self {
+        Self {
+            columns: vec![false; n],
+            diagonals_top_left_2_bot_right: vec![false; 2*n -1],
+            diagonals_top_right_2_bot_left: vec![false; 2*n -1],
+        }
+    }
+
+    pub fn mark(&mut self, row: usize, col: usize) {
+        self.columns[col] = true;
+        self.diagonals_top_right_2_bot_left[row + col] = true;
+        // if x = row-col is negative, x = abs(x) + n-1
+        let idx = self.map_row_minus_col_2_index(row, col);
+        self.diagonals_top_left_2_bot_right[idx] = true;
+    }
+
+    pub fn unmark(&mut self, row: usize, col: usize) {
+        self.columns[col] = false;
+        self.diagonals_top_right_2_bot_left[row + col] = false;
+        
+        let idx = self.map_row_minus_col_2_index(row, col);
+        self.diagonals_top_left_2_bot_right[idx] = false;
+    }
+
+    pub fn is_safe(&self, row: usize, col: usize) -> bool {
+        !self.columns[col] &&
+        !self.diagonals_top_right_2_bot_left[row + col] &&
+        !self.diagonals_top_left_2_bot_right[self.map_row_minus_col_2_index(row, col)]
+    }
+
+    // if x = row-col is negative, x = abs(x) + n-1
+    fn map_row_minus_col_2_index(&self, row: usize, col: usize) -> usize {
+        let mut x = row as i32  - col as i32;
+        if x < 0 {
+            x = -x + (self.columns.len() - 1) as i32;
+        }
+        x as usize
+    }
+}
 ```
 
 <br>
