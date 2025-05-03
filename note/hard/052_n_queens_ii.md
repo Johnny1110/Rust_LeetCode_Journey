@@ -16,6 +16,10 @@ link: https://leetcode.com/problems/n-queens-ii/description/
 
 ## Brain Strom
 
+Why it seems like same to __051 - n queens__ problem ?
+
+Are there any fast approach to find out how many distinct solutions to the n-queens puzzle ?
+
 <br>
 
 ## Let's Code
