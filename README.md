@@ -33,6 +33,7 @@ Weekly leetcode training with Rust, start from 2025/02/20.
 
 * 050 - Pow(x, n) (2025/04/19)  [problem link](https://leetcode.com/problems/powx-n/description/) [solution](note/medium/050_pow_x_n.md)
 
+* 053 - Maximum Subarray (2025/05/11) 👈 [problem link](https://leetcode.com/problems/maximum-subarray/description/) [solution](note/medium/maximum_subarray.md)
 <br>
 
 ### Hard
@@ -41,7 +42,7 @@ Weekly leetcode training with Rust, start from 2025/02/20.
 
 * 051 - N-Queens (2025/04/26) [problem link](https://leetcode.com/problems/n-queens/description/) [solution](note/hard/051_n_queens.md)
 
-* 052 - N-Queens II (2025/05/03) 👈 [problem link](https://leetcode.com/problems/n-queens-ii/description/) [solution](note/hard/052_n_queens_ii.md)
+* 052 - N-Queens II (2025/05/03) [problem link](https://leetcode.com/problems/n-queens-ii/description/) [solution](note/hard/052_n_queens_ii.md)
 
 <br>
 <br>
