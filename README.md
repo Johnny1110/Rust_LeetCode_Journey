@@ -33,7 +33,9 @@ Weekly leetcode training with Rust, start from 2025/02/20.
 
 * 050 - Pow(x, n) (2025/04/19)  [problem link](https://leetcode.com/problems/powx-n/description/) [solution](note/medium/050_pow_x_n.md)
 
-* 053 - Maximum Subarray (2025/05/11) 👈 [problem link](https://leetcode.com/problems/maximum-subarray/description/) [solution](note/medium/maximum_subarray.md)
+* 053 - Maximum Subarray (2025/05/11) [problem link](https://leetcode.com/problems/maximum-subarray/description/) [solution](note/medium/maximum_subarray.md)
+
+* 054 - Spiral Matrix (2025/05/17) 👈 [problem link](https://leetcode.com/problems/spiral-matrix/description/) [solution](note/medium/spiral_matrix.md)
 <br>
 
 ### Hard
