@@ -37,7 +37,9 @@ Weekly leetcode training with Rust, start from 2025/02/20.
 
 * 054 - Spiral Matrix (2025/05/17) [problem link](https://leetcode.com/problems/spiral-matrix/description/) [solution](note/medium/spiral_matrix.md)
 
-* 055 - 55. Jump Game (2025/05/25) 👈 [problem link](https://leetcode.com/problems/jump-game/) [solution](note/medium/jump_game.md)
+* 055 - Jump Game (2025/05/25) [problem link](https://leetcode.com/problems/jump-game/) [solution](note/medium/jump_game.md)
+
+* 056 - Merge Intervals (2025/06/14) 👈 [problem link](https://leetcode.com/problems/merge-intervals/description/) [solution](note/medium/merge_intervals.md)
 <br>
 
 ### Hard
