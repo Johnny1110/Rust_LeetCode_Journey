@@ -39,7 +39,9 @@ Weekly leetcode training with Rust, start from 2025/02/20.
 
 * 055 - Jump Game (2025/05/25) [problem link](https://leetcode.com/problems/jump-game/) [solution](note/medium/jump_game.md)
 
-* 056 - Merge Intervals (2025/06/14) 👈 [problem link](https://leetcode.com/problems/merge-intervals/description/) [solution](note/medium/merge_intervals.md)
+* 056 - Merge Intervals (2025/06/14) [problem link](https://leetcode.com/problems/merge-intervals/description/) [solution](note/medium/merge_intervals.md)
+
+* 057 - Insert Intervals (2025/06/28) 👈 [problem link](https://leetcode.com/problems/insert-interval/description/) [solution](note/medium/insert_intervals.md)
 <br>
 
 ### Hard
